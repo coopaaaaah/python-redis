@@ -14,6 +14,8 @@ services:
       - cache
     ports: 
       - 3000:3000
+    volumes:
+      - ./utils/data.txt:/var/data.txt
     environment:
       REDIS_HOST: cache
       REDIS_PORT: 6379
@@ -24,6 +26,8 @@ services:
       - client
     ports: 
       - 4000:4000
+    volumes:
+      - ./utils/data.txt:/var/data.txt
     environment:
       REDIS_HOST: cache
       REDIS_PORT: 6379
