@@ -1,6 +1,11 @@
 # python-redis
 poc to measure client writes / server read performance
 
+to setup some uuids for the client and server read
+```
+python ./utils/main.py
+```
+
 to run 
 ```
 docker compose up
