@@ -19,6 +19,7 @@ services:
     environment:
       REDIS_HOST: cache
       REDIS_PORT: 6379
+      KEY: "entity_dave"
   server:
     build: ./server
     depends_on:
@@ -31,6 +32,7 @@ services:
     environment:
       REDIS_HOST: cache
       REDIS_PORT: 6379
+      KEY: "entity_dave"
 volumes:
   cache:
     driver: local
